@@ -11,7 +11,8 @@ float calculodensidade1, calculodensidade2, pibpercapita1, pibpercapita2 ;
 int populacao1, populacao2;
 float atributo1, atributo2 ;
 
-printf("digite a letra da primeira carta:\n");
+   //carta 01
+    printf("digite a letra da primeira carta:\n");
     scanf(" %s", estado1);
 
     printf("digite o codigo da primeira carta:\n");
@@ -35,7 +36,7 @@ printf("digite a letra da primeira carta:\n");
 
 
 
-   //Entrada da segunda carta
+   //Entrada da carta 02
     printf("escreva a letra da segunda carta :\n");
     scanf(" %s", estado2);
 
@@ -60,14 +61,15 @@ printf("digite a letra da primeira carta:\n");
 
 
 
-//calculos da primeira carta
+//calculos da carta 01
 calculodensidade1 = (float) populacao1 / area1;
 pibpercapita1 =(PIB1 * 1000000000.0) /(float) populacao1;
 
-//calculos da segunda carta
+//calculos da carta 02
  calculodensidade2 =(float)populacao2 / area2;
  pibpercapita2 =(PIB2 * 1000000000.0) /(float) populacao2;
 
+ //escolha do atributo
  atributo1 = populacao1;
  atributo2 = populacao2;
  
@@ -77,6 +79,7 @@ pibpercapita1 =(PIB1 * 1000000000.0) /(float) populacao1;
   printf("Carta 1 - %s (%s): %d\n", cidade1, estado1, populacao1);
     printf("Carta 2 - %s (%s): %d\n", cidade2, estado2, populacao2);
 
+    //comparação em if-else
  if (atributo1 > atributo2) {
     printf("Carta 1 %s venceu! valor:%d\n",estado1,populacao1);
     
