@@ -21,7 +21,7 @@ int main() {
     float valor1atributo2 = 0, valor2atributo2 = 0;
     char *nomeatributo1, *nomeatributo2;
 
-
+    //Pedidos das escolhas dos atributos
     printf("Escolha dois atributos para comparar:\n");
     printf("1 - População\n");
     printf("2 - Área\n");
