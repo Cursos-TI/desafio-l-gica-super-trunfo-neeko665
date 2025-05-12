@@ -22,19 +22,28 @@ int main() {
     char *nomeatributo1, *nomeatributo2;
 
     //Pedidos das escolhas dos atributos
-    printf("Escolha dois atributos para comparar:\n");
+    printf("Escolha dois atributos para comparar(de 1 a 5):\n");
     printf("1 - População\n");
     printf("2 - Área\n");
     printf("3 - PIB\n");
     printf("4 - Pontos Turísticos\n");
     printf("5 - Densidade Geográfica\n");
 
+    //digitar os numeros
     printf("Digite o número do primeiro atributo: ");
-    scanf("%d", &atributo1);
+    if (scanf("%d", &atributo1) != 1) {
+        printf("Erro: você precisa digitar um número!\n");
+        return 1;
+    }
+    
     printf("Digite o número do segundo atributo: ");
-    scanf("%d", &atributo2);
+    if (scanf("%d", &atributo2) != 1) {
+        printf("Erro: você precisa digitar um número!\n");
+        return 1;
+    }
+    
 
-
+    
      // Verifica se os atributos são diferentes
      if (atributo1 == atributo2) {
         printf("Erro: Os atributos escolhidos devem ser diferentes.\n");
